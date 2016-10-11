@@ -3,6 +3,16 @@
 require_once 'addprofiledata.civix.php';
 
 /**
+ * Implements hook_civicrm_buildForm().
+ *
+ * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_buildForm
+ */
+function addprofiledata_civicrm_buildForm($formName, &$form) {
+  $profile = new CRM_Addprofiledata_Profile();
+  $profile->buildForm($formName, $form);
+}
+
+/**
  * Implements hook_civicrm_config().
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_config
