@@ -15,7 +15,7 @@ class CRM_Addprofiledata_Profile {
    * CRM_Addprofiledata_Profile constructor.
    */
   function __construct() {
-    $this->_stayInformedProfileId = 14;
+    $this->_stayInformedProfileId = 12;
   }
 
   /**
