@@ -32,7 +32,7 @@ class CRM_Addprofiledata_Profile {
         $groupElement = $form->getElement('group');
         foreach ($groupElement->_elements as $elementId => &$element) {
           if (!empty($tagGroup['group'][$element->_attributes['id']]['description'])) {
-            $element->_text = $element->_text . ' <span class="description">(' . $tagGroup['group'][$element->_attributes['id']]['description'] . ')</span>';
+            $element->_text = $element->_text . ' <br/><span class="description">(' . $tagGroup['group'][$element->_attributes['id']]['description'] . ')</span>';
           }
         }
       }
